@@ -1,0 +1,139 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  color: #070707;
+
+}
+.bio-link {
+  width: 250px;
+  max-width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+  background-color: #e8ecf4;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(154, 58, 58, 0.1);
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+main {
+  position: relative;
+}
+
+header {
+  margin-top: -1em;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header > img {
+  width: 6em;
+  height: 6em;
+  border-radius: 100%;
+  border: 1px solid #fff;
+  box-shadow: rgba(40, 50, 189, 0.24) 0px 2px 8px 0px;
+}
+
+header > h1 {
+  display: inline-block;
+  font-size: 0.8em;
+  font-weight: bold;
+  border-radius: 1em;
+  background-color: #0097DA;
+  color: #fff;
+  padding: 0.3em 0.6em;
+  margin-top: 2em;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+ 
+table {
+	width: 50%;
+  max-width: 300px;
+  margin: 0 auto; 
+	border-collapse: collapse;
+  background-color: #92B4EC;
+}
+
+th, td {
+	border: 1px solid white;
+	padding: 5px;
+	text-align: center;
+}
+
+ul {
+  box-sizing: border-box;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0.2em;
+  max-width: 480px;
+  
+}
+
+ul > li {
+  display: block; 
+  background-color: white;
+  border-radius: 1em;
+  margin: 1.4em 0 ;
+  box-shadow: rgb(28 32 93 / 24%) 0px 2px 8px 0px;
+  margin: 0 auto 10px;
+}
+
+ul > li > a > img {
+  width: 26px; 
+}
+
+ul > li > a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: left;
+  gap: 1em;
+  max-width: 480px;
+  padding: 15px;
+}
+
+ ul>li:hover {
+  background-color: #0097DA;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* Media queries untuk menyesuaikan max-width pada layar tertentu */
+@media only screen and (min-width: 600px) {
+  /* Untuk layar dengan lebar minimal 600px */
+  .bio-link {
+    padding: 50px;
+    width: auto;
+    float: none;
+  }
+}
+
+@media (max-width: 600px) {
+  /* Untuk layar dengan lebar maksimal 600px */
+  table {
+    width: 100%; /* Tabel menjadi lebar penuh */
+  }
+
+  ul > li > a {
+    justify-content: flex-start; /* Menggeser elemen ke sisi kiri */
+  }
+
+  ul > li > a > img {
+    width: 40px; /* Atur ukuran gambar sesuai kebutuhan */
+  }
+
+  ul > li > a > span {
+    flex: 1; /* Membuat teks memenuhi sisa ruang yang tersedia */
+    text-align: center; /* Menyelaraskan teks ke tengah */
+  }
+}
