@@ -14,7 +14,7 @@ $image = get_link_data('Image')
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script></script>
-    <title>Document</title>
+    <title>Enrichment</title>
   </head>
   <body>
     <div class="bio-link">
